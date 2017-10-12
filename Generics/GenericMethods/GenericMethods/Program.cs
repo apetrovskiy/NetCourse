@@ -18,9 +18,18 @@
 			var dog = new Dog{ Fecals = new Fecals{ Color = FecalColors.Brown, Consistency = FecalConsistency.Hard }};
 			servant.AnalyseHealthOfAnimalByFecalColor(dog);
 			servant.AnalyseHealthOfAnimalByFecalConsistency(dog);
+
 			var cat = new Cat { Fecals = new Fecals { Color = FecalColors.Green, Consistency = FecalConsistency.Liquid } };
 			servant.AnalyseHealthOfAnimalByFecalColor(cat);
 			servant.AnalyseHealthOfAnimalByFecalConsistency(cat);
+
+			var racoon = new Racoon {Fecals = new Fecals {Color = FecalColors.Red, Consistency = FecalConsistency.Hard}};
+			servant.AnalyseHealthOfAnimalByFecalColor(racoon);
+			servant.AnalyseHealthOfAnimalByFecalConsistency(racoon);
+
+			var skunk = new Skunk{ Fecals = new Fecals{ Color = FecalColors.Yellow, Consistency = FecalConsistency.Liquid }};
+			servant.AnalyseHealthOfAnimalByFecalColor(skunk, new Bucket(), new Umbrella());
+			servant.AnalyseHealthOfAnimalByFecalConsistency(skunk, new Bucket(), new Umbrella());
 
 			Console.ReadKey();
 		}

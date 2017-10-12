@@ -44,5 +44,25 @@
 		{
 			return cat.AnalyseHealthByConsistency(cat.Fecals);
 		}
+
+		public FecalColors AnalyseHealthOfAnimalByFecalColor(Racoon racoon)
+		{
+			return racoon.AnalyseHealthByColor(racoon.Fecals);
+		}
+
+		public FecalConsistency AnalyseHealthOfAnimalByFecalConsistency(Racoon racoon)
+		{
+			return racoon.AnalyseHealthByConsistency(racoon.Fecals);
+		}
+
+		public FecalColors AnalyseHealthOfAnimalByFecalColor(Skunk skunk, Bucket bucket, Umbrella umbrella)
+		{
+			return skunk.AnalyseHealthByColor(skunk.Fecals, bucket, umbrella);
+		}
+
+		public FecalConsistency AnalyseHealthOfAnimalByFecalConsistency(Skunk skunk, Bucket bucket, Umbrella umbrella)
+		{
+			return skunk.AnalyseHealthByConsistency(skunk.Fecals, bucket, umbrella);
+		}
 	}
 }

@@ -3,3 +3,7 @@ servant.Feed<Dog>();
 this assumes that we don't need to pass a new animal object into the method
 
 Task 02: the same for analysing health
+
+Task 03: introduce constraints to generic methods
+03.1 all animals except the skunk - analysis of the health
+03.2 
