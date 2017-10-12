@@ -2,6 +2,7 @@
 {
 	using System;
 	using ObjectModel;
+	using ObjectModel.Abstract;
 	using ObjectModel.Animals;
 	using ObjectModel.Materials;
 

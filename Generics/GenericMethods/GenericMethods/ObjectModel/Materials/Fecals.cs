@@ -1,5 +1,7 @@
 ﻿namespace GenericMethods.ObjectModel.Materials
 {
+	using Abstract;
+
 	public class Fecals
 	{
 		public double Weight { get; set; }

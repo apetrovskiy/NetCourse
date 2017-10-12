@@ -1,4 +1,4 @@
-﻿namespace GenericMethods.ObjectModel.Materials
+﻿namespace GenericMethods.ObjectModel.Abstract
 {
 	public enum FecalColors
 	{

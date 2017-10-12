@@ -1,5 +1,6 @@
 ﻿namespace GenericMethods.ObjectModel
 {
+	using Abstract;
 	using Animals;
 	using Materials;
 

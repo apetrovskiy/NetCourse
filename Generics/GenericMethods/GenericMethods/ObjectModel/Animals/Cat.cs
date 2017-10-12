@@ -1,6 +1,7 @@
 ﻿namespace GenericMethods.ObjectModel.Animals
 {
 	using System;
+	using Abstract;
 	using Exceptions;
 	using Materials;
 
