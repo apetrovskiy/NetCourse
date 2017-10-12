@@ -1,8 +1,9 @@
-﻿namespace GenericMethods.ObjectModel
+﻿namespace GenericMethods.ObjectModel.Animals
 {
 	using System;
+	using Materials;
 
-	public class Racoon
+	public class Skunk
 	{
 		public void Feed(Food dosage)
 		{

@@ -1,5 +1,8 @@
 ﻿namespace GenericMethods.ObjectModel
 {
+	using Animals;
+	using Materials;
+
 	public class Servant
 	{
 		public void FeedDog(Dog dog)

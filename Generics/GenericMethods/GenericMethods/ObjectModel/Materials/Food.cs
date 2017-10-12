@@ -1,4 +1,4 @@
-﻿namespace GenericMethods.ObjectModel
+﻿namespace GenericMethods.ObjectModel.Materials
 {
 	public class Food
 	{

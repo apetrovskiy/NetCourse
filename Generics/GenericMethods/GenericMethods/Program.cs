@@ -2,6 +2,7 @@
 {
 	using System;
 	using ObjectModel;
+	using ObjectModel.Animals;
 
 	class Program
 	{
