@@ -47,6 +47,7 @@
     <Compile Include="ObjectModel\Animals\Dog.cs" />
     <Compile Include="ObjectModel\Abstract\ExceptionConstants.cs" />
     <Compile Include="ObjectModel\Exceptions\AnimalIsSickException.cs" />
+    <Compile Include="ObjectModel\Helpers\ExceptionThrower.cs" />
     <Compile Include="ObjectModel\Materials\Bucket.cs" />
     <Compile Include="ObjectModel\Abstract\FecalColors.cs" />
     <Compile Include="ObjectModel\Abstract\FecalConsistency.cs" />

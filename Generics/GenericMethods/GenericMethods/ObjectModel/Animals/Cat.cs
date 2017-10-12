@@ -3,6 +3,7 @@
 	using System;
 	using Abstract;
 	using Exceptions;
+	using Helpers;
 	using Materials;
 
 	public class Cat
@@ -17,14 +18,14 @@
 		public FecalColors AnalyseHealthByColor(Fecals fecals)
 		{
 			if (FecalColors.Red == fecals.Color || FecalColors.Green == fecals.Color)
-				throw new AnimalIsSickException(ExceptionConstants.InDangerWarning);
+				ExceptionThrower.GenerateAnimalIsSickException();
 			return fecals.Color;
 		}
 
 		public FecalConsistency AnalyseHealthByConsistency(Fecals fecals)
 		{
 			if (FecalConsistency.Liquid == fecals.Consistency)
-				throw new AnimalIsSickException(ExceptionConstants.InDangerWarning);
+				ExceptionThrower.GenerateAnimalIsSickException();
 			return fecals.Consistency;
 		}
 	}
