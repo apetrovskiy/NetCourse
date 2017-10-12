@@ -1,3 +1,5 @@
 ﻿Task 01: convert non-generic code to better like
 servant.Feed<Dog>();
 this assumes that we don't need to pass a new animal object into the method
+
+Task 02: 

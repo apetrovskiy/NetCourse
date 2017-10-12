@@ -44,6 +44,10 @@
   <ItemGroup>
     <Compile Include="ObjectModel\Animals\Cat.cs" />
     <Compile Include="ObjectModel\Animals\Dog.cs" />
+    <Compile Include="ObjectModel\Exceptions\AnimalIsSickException.cs" />
+    <Compile Include="ObjectModel\Materials\FecalColors.cs" />
+    <Compile Include="ObjectModel\Materials\FecalConsistency.cs" />
+    <Compile Include="ObjectModel\Materials\Fecals.cs" />
     <Compile Include="ObjectModel\Materials\Food.cs" />
     <Compile Include="ObjectModel\Servant.cs" />
     <Compile Include="Program.cs" />
