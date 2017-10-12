@@ -8,8 +8,6 @@
 	{
 		static void Main(string[] args)
 		{
-			// Task: convert non-generic code to better like
-			// servant.Feed<Dog>();
 			var servant = new Servant();
 			servant.FeedCat(new Cat());
 			servant.FeedDog(new Dog());
