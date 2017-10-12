@@ -15,3 +15,9 @@ Task 04: introduce interface(s) for animals
 Task 05: create a class and a method for getting born new animals
 05.1 the new() constraint
 05.2 the default instruction
+sample usage:
+var vet = new Vet();
+var puppy = vet.GetNew<Dog>();
+var puppies = vet.GetNew<Dog>();
+the method should return a collection or a single child animal,
+it's possible to crate a method returning a colelction with subsequent loading/enumerating only one pet
