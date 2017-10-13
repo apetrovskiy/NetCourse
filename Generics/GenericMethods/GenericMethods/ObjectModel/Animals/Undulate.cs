@@ -5,7 +5,7 @@ using System;
 
 namespace GenericMethods.ObjectModel.Animals
 {
-    public class Undulate
+    public class Undulate : IDrinking
     {
         public Fecals Fecals { get; set; }
 
@@ -26,5 +26,10 @@ namespace GenericMethods.ObjectModel.Animals
                 ExceptionThrower.GenerateAnimalIsSickException(ExceptionConstants.UndulateInDangerWarning);
             return fecals.Consistency;
         }
+
+	    public void DrinkWater(Water water)
+	    {
+		    Console.WriteLine(DescriptionConstants.UndulateDrank, water.Volume);
+	    }
     }
 }

@@ -44,9 +44,11 @@
   <ItemGroup>
     <Compile Include="ObjectModel\Abstract\AnimalTypes.cs" />
     <Compile Include="ObjectModel\Abstract\DescriptionConstants.cs" />
+    <Compile Include="ObjectModel\Abstract\IDrinking.cs" />
     <Compile Include="ObjectModel\Animals\Cat.cs" />
     <Compile Include="ObjectModel\Animals\Dog.cs" />
     <Compile Include="ObjectModel\Abstract\ExceptionConstants.cs" />
+    <Compile Include="ObjectModel\Animals\Iguana.cs" />
     <Compile Include="ObjectModel\Animals\Undulate.cs" />
     <Compile Include="ObjectModel\Exceptions\AnimalIsSickException.cs" />
     <Compile Include="ObjectModel\Helpers\ExceptionThrower.cs" />
@@ -56,6 +58,7 @@
     <Compile Include="ObjectModel\Materials\Fecals.cs" />
     <Compile Include="ObjectModel\Materials\Food.cs" />
     <Compile Include="ObjectModel\Materials\Umbrella.cs" />
+    <Compile Include="ObjectModel\Materials\Water.cs" />
     <Compile Include="ObjectModel\Servant.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,10 +69,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BusinessRules.txt" />
-    <Content Include="TasksOnCodeStructure.txt" />
-    <Content Include="TasksOnExtensionMethods.txt" />
-    <Content Include="TasksOnGenerics.txt" />
+    <Content Include="TaskList\BusinessRules.txt" />
+    <Content Include="TaskList\TasksOnCodeStructure.txt" />
+    <Content Include="TaskList\TasksOnExtensionMethods.txt" />
+    <Content Include="TaskList\TasksOnGenerics.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

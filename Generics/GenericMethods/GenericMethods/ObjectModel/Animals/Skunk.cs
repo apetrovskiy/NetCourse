@@ -6,7 +6,7 @@
 	using Helpers;
 	using Materials;
 
-	public class Skunk
+	public class Skunk : IDrinking
 	{
 		public Fecals Fecals { get; set; }
 
@@ -26,6 +26,11 @@
 		{
 			// any type of fecals is good for the skunk
 			return fecals.Consistency;
+		}
+
+		public void DrinkWater(Water water)
+		{
+			Console.WriteLine(DescriptionConstants.SkunkDrank, water.Volume);
 		}
 	}
 }

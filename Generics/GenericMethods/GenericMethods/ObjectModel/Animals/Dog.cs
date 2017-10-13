@@ -6,7 +6,7 @@
 	using Helpers;
 	using Materials;
 
-	public class Dog
+	public class Dog : IDrinking
 	{
 		public Fecals Fecals { get; set; }
 
@@ -27,6 +27,11 @@
 			if (FecalConsistency.Liquid == fecals.Consistency)
 				ExceptionThrower.GenerateAnimalIsSickException(ExceptionConstants.DogInDangerWarning);
 			return fecals.Consistency;
+		}
+
+		public void DrinkWater(Water water)
+		{
+			Console.WriteLine(DescriptionConstants.DogDrank, water.Volume);
 		}
 	}
 }

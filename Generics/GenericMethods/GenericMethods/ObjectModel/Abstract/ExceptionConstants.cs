@@ -7,5 +7,6 @@
         public const string RacoonInDangerWarning = "Your rac is in danger!";
         public const string SkunkInDangerWarning = "Your thing is in danger!";
         public const string UndulateInDangerWarning = "Your birdie is in danger!";
-    }
+		public const string IguanaInDangerWarning = "The lizard isn't moving!";
+	}
 }

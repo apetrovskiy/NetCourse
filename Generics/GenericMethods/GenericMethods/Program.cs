@@ -16,6 +16,14 @@
 			servant.FeedRacoon(new Racoon());
 			servant.FeedSkunk(new Skunk());
             servant.FeedUndulate(new Undulate());
+			servant.FeedIguana(new Iguana());
+
+			servant.GiveWaterToAnimal(new Cat(), new Water{ Volume = 0.2 });
+			servant.GiveWaterToAnimal(new Dog(), new Water { Volume = 0.5 });
+			servant.GiveWaterToAnimal(new Racoon(), new Water { Volume = 0.4 });
+			servant.GiveWaterToAnimal(new Skunk(), new Water { Volume = 0.8 });
+			servant.GiveWaterToAnimal(new Undulate(), new Water { Volume = 0.01 });
+			servant.GiveWaterToAnimal(new Iguana(), new Water { Volume = 0.1 });
 
 			var dog = new Dog{ Fecals = new Fecals{ Color = FecalColors.Brown, Consistency = FecalConsistency.Hard }};
             try

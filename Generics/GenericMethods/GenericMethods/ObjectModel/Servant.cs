@@ -31,6 +31,16 @@
             undulate.Feed(new Food { PiecesCount = 1, Name = "the stick" });
         }
 
+		public void FeedIguana(Iguana iguana)
+		{
+			iguana.Feed(new Food{ PiecesCount = 3 });
+		}
+
+		public void GiveWaterToAnimal(IDrinking drinkingAnimal, Water water)
+		{
+			drinkingAnimal.DrinkWater(water);
+		}
+
         public FecalColors AnalyseHealthOfAnimalByFecalColor(Dog dog)
 		{
 			return dog.AnalyseHealthByColor(dog.Fecals);
@@ -80,5 +90,5 @@
         {
             return undulate.AnalyseHealthByConsistency(undulate.Fecals);
         }
-    }
+	}
 }
