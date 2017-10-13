@@ -12,20 +12,19 @@
 
 		public void Feed(Food dosage)
 		{
-			Console.WriteLine(DescriptionConstants.ImFedWith, dosage.Weight);
+			Console.WriteLine(DescriptionConstants.SkunkFedWith, dosage.Weight);
 		}
 
 		public FecalColors AnalyseHealthByColor(Fecals fecals, Bucket bucket, Umbrella umbrella)
 		{
 			if (FecalColors.Red == fecals.Color || FecalColors.Green == fecals.Color)
-				ExceptionThrower.GenerateAnimalIsSickException();
+				ExceptionThrower.GenerateAnimalIsSickException(ExceptionConstants.SkunkInDangerWarning);
 			return fecals.Color;
 		}
 
 		public FecalConsistency AnalyseHealthByConsistency(Fecals fecals, Bucket bucket, Umbrella umbrella)
 		{
-			if (FecalConsistency.Liquid == fecals.Consistency)
-				ExceptionThrower.GenerateAnimalIsSickException();
+			// any type of fecals is good for the skunk
 			return fecals.Consistency;
 		}
 	}

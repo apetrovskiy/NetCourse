@@ -15,22 +15,47 @@
 			servant.FeedDog(new Dog());
 			servant.FeedRacoon(new Racoon());
 			servant.FeedSkunk(new Skunk());
+            servant.FeedUndulate(new Undulate());
 
 			var dog = new Dog{ Fecals = new Fecals{ Color = FecalColors.Brown, Consistency = FecalConsistency.Hard }};
-			servant.AnalyseHealthOfAnimalByFecalColor(dog);
-			servant.AnalyseHealthOfAnimalByFecalConsistency(dog);
+            try
+            {
+                servant.AnalyseHealthOfAnimalByFecalColor(dog);
+                servant.AnalyseHealthOfAnimalByFecalConsistency(dog);
+            }
+            catch { }
 
 			var cat = new Cat { Fecals = new Fecals { Color = FecalColors.Green, Consistency = FecalConsistency.Liquid } };
-			servant.AnalyseHealthOfAnimalByFecalColor(cat);
-			servant.AnalyseHealthOfAnimalByFecalConsistency(cat);
+            try
+            {
+                servant.AnalyseHealthOfAnimalByFecalColor(cat);
+                servant.AnalyseHealthOfAnimalByFecalConsistency(cat);
+            }
+            catch { }
 
 			var racoon = new Racoon {Fecals = new Fecals {Color = FecalColors.Red, Consistency = FecalConsistency.Hard}};
-			servant.AnalyseHealthOfAnimalByFecalColor(racoon);
-			servant.AnalyseHealthOfAnimalByFecalConsistency(racoon);
+            try
+            {
+                servant.AnalyseHealthOfAnimalByFecalColor(racoon);
+                servant.AnalyseHealthOfAnimalByFecalConsistency(racoon);
+            }
+            catch { }
 
 			var skunk = new Skunk{ Fecals = new Fecals{ Color = FecalColors.Yellow, Consistency = FecalConsistency.Liquid }};
-			servant.AnalyseHealthOfAnimalByFecalColor(skunk, new Bucket(), new Umbrella());
-			servant.AnalyseHealthOfAnimalByFecalConsistency(skunk, new Bucket(), new Umbrella());
+            try
+            {
+                servant.AnalyseHealthOfAnimalByFecalColor(skunk, new Bucket(), new Umbrella());
+                servant.AnalyseHealthOfAnimalByFecalConsistency(skunk, new Bucket(), new Umbrella());
+            }
+            catch { }
+
+            var birdie = new Undulate { Fecals = new Fecals { Color = FecalColors.Yellow, Consistency = FecalConsistency.Liquid } };
+            try
+            {
+                servant.AnalyseHealthOfAnimalByFecalColor(birdie);
+                servant.AnalyseHealthOfAnimalByFecalConsistency(birdie);
+            }
+            catch { }
 
 			Console.ReadKey();
 		}

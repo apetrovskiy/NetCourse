@@ -5,9 +5,9 @@
 
 	public class ExceptionThrower
 	{
-		public static void GenerateAnimalIsSickException()
+		public static void GenerateAnimalIsSickException(string warningMessage)
 		{
-			throw new AnimalIsSickException(ExceptionConstants.InDangerWarning);
+			throw new AnimalIsSickException(warningMessage);
 		}
 	}
 }

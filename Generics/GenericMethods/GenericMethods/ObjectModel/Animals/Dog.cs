@@ -12,20 +12,20 @@
 
 		public void Feed(Food dosage)
 		{
-			Console.WriteLine(DescriptionConstants.ImFedWith, dosage.Weight);
+			Console.WriteLine(DescriptionConstants.DogFedWith, dosage.Weight);
 		}
 
 		public FecalColors AnalyseHealthByColor(Fecals fecals)
 		{
 			if (FecalColors.Red == fecals.Color || FecalColors.Green == fecals.Color)
-				ExceptionThrower.GenerateAnimalIsSickException();
+				ExceptionThrower.GenerateAnimalIsSickException(ExceptionConstants.DogInDangerWarning);
 			return fecals.Color;
 		}
 
 		public FecalConsistency AnalyseHealthByConsistency(Fecals fecals)
 		{
 			if (FecalConsistency.Liquid == fecals.Consistency)
-				ExceptionThrower.GenerateAnimalIsSickException();
+				ExceptionThrower.GenerateAnimalIsSickException(ExceptionConstants.DogInDangerWarning);
 			return fecals.Consistency;
 		}
 	}

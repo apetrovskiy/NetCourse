@@ -9,5 +9,7 @@
 		public FecalColors Color { get; set; }
 
 		public FecalConsistency Consistency { get; set; }
+
+        public AnimalTypes OfAnimalType { get; set; }
 	}
 }

@@ -26,7 +26,12 @@
 			racoon.Feed(new Food { Weight = 50, Name = "sweets" });
 		}
 
-		public FecalColors AnalyseHealthOfAnimalByFecalColor(Dog dog)
+        public void FeedUndulate(Undulate undulate)
+        {
+            undulate.Feed(new Food { PiecesCount = 1, Name = "the stick" });
+        }
+
+        public FecalColors AnalyseHealthOfAnimalByFecalColor(Dog dog)
 		{
 			return dog.AnalyseHealthByColor(dog.Fecals);
 		}
@@ -65,5 +70,15 @@
 		{
 			return skunk.AnalyseHealthByConsistency(skunk.Fecals, bucket, umbrella);
 		}
-	}
+
+        public FecalColors AnalyseHealthOfAnimalByFecalColor(Undulate undulate)
+        {
+            return undulate.AnalyseHealthByColor(undulate.Fecals);
+        }
+
+        public FecalConsistency AnalyseHealthOfAnimalByFecalConsistency(Undulate undulate)
+        {
+            return undulate.AnalyseHealthByConsistency(undulate.Fecals);
+        }
+    }
 }

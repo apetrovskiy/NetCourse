@@ -1,0 +1,6 @@
+﻿Mammals consume food in gramms
+Birds consume food in pieces
+
+Mammals are in danger fs their fecals're green or red, or liquid
+The skunk is an exception and its fecals are always ok
+Birds don't show problem by fecals' color

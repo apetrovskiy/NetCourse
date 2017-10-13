@@ -42,10 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ObjectModel\Abstract\AnimalTypes.cs" />
     <Compile Include="ObjectModel\Abstract\DescriptionConstants.cs" />
     <Compile Include="ObjectModel\Animals\Cat.cs" />
     <Compile Include="ObjectModel\Animals\Dog.cs" />
     <Compile Include="ObjectModel\Abstract\ExceptionConstants.cs" />
+    <Compile Include="ObjectModel\Animals\Undulate.cs" />
     <Compile Include="ObjectModel\Exceptions\AnimalIsSickException.cs" />
     <Compile Include="ObjectModel\Helpers\ExceptionThrower.cs" />
     <Compile Include="ObjectModel\Materials\Bucket.cs" />
@@ -64,6 +66,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BusinessRules.txt" />
     <Content Include="Tasks.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
