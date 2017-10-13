@@ -11,6 +11,8 @@ Task 03: introduce constraints to generic methods
 Task 04: introduce interface(s) for animals
 04.1 preserve difference for the skunk
 04.2 use interface(s) as constraints
+04.3 separate birds and animals of other types with interfaces
+04.4 implement support for business rules via types and interfaces
 
 Task 05: create a class and a method for getting born new animals
 05.1 the new() constraint

@@ -1,0 +1,3 @@
+﻿Task 01: reduce reprtitiveness in calls to analysis methods
+
+Task 02: reduce repetitiveness in error handling
