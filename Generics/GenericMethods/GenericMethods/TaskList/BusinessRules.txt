@@ -1,6 +1,9 @@
 ﻿Mammals consume food in gramms
-Birds consume food in pieces
+Birds and reptiles consume food in pieces
 
-Mammals are in danger fs their fecals're green or red, or liquid
+Water consumption is measured in litres
+
+Mammals are in danger if their fecals're green or red, or liquid
 The skunk is an exception and its fecals are always ok
-Birds don't show problem by fecals' color
+Birds don't show problems by fecals' color
+Reptiles dont' either

@@ -1,3 +1,5 @@
-﻿Task 01: reduce reprtitiveness in calls to analysis methods
+﻿Task 01: reduce repetitiveness in calls to analysis methods
+A typical way to reduce these code repetitions is usage of the Sterategy or Template Method patters
 
 Task 02: reduce repetitiveness in error handling
+A typical way to reduce the 'spaghetti' code is to use AOP, for example, upon Castle.DynamicProxy
