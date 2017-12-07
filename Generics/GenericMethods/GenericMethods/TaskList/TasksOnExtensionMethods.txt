@@ -1,1 +1,4 @@
 ﻿Task 01: convert method calls in classes to extension methods
+Instead of implementing methods in each class, we can use either solutions: implementation in the base class or use of extension methods.
+Implementation in base class has its drawbacks, the most unpleasant is that it's difficult to provide separation/exclusion for several types only.
+Extension methods contain common code, along with the possibility to use another extension method if necessary.
